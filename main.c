@@ -6,9 +6,11 @@
 #include <string.h>
 #include <stdio.h>
 
-void main(char[] message){
+void main(char message[], int cle){
     char answ[];
-    char rep;
+
+    //if (verifier(cle)){
+    //  cle = convertir(cle)
 
     if (verifier(message)){
         answ = convertir(message);
@@ -25,4 +27,6 @@ void main(char[] message){
     } else{
         printf("Erreur : Caracteres non valide\n");
     }
+
+    //}
 }
